@@ -1,0 +1,324 @@
+*
+{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.side-nav
+{
+    width: 300px;
+    height: 1004vh;
+    background-color: black;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    color: #fff;
+    z-index: 1000;
+    animation: fadeOutLeft;
+    animation-duration: 0.8s;
+}
+.side-nav .top-nav-box .img-box
+{
+    width: 120px;
+    height: 120px;
+    background-color: rgba(110, 110, 110, 0.588);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.side-nav .top-nav-box .img-box .img
+{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-image: url(../images/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.side-nav .nav-icon-box i
+{
+    padding: 10px;
+    background-color: rgba(110, 110, 110, 0.588);
+    font-size: 17px;
+    border-radius: 50%;
+    
+}
+
+.side-nav .center-nav-box .list-group li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+.side-nav  .center-nav-box .list-group li i
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+.side-nav .center-nav-box .list-group li:hover a,
+.side-nav .center-nav-box .list-group li:hover i
+{
+    color: blue;
+}
+.side-nav .active
+{
+    opacity: 1;
+    animation: fadeInLeft;
+    animation-duration: 0.8s;
+}
+
+.hero-bg
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/20.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.hero-bg .her-bg-shadow-box
+{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.588);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.hero-bg .her-bg-shadow-box h1{
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.hero-bg .her-bg-shadow-box h6
+{
+    font-size: 22px;
+}
+.hero-bg .her-bg-shadow-box h6 span
+{
+    color: #149DDD;
+}
+
+.hero-bg button
+{
+    color: #fff;
+    z-index: 100;
+    opacity: 0;
+}
+
+.about-section h2
+{
+    color: #149DDD;
+}
+.about-section i
+{
+    color: #149DDD;
+}
+/* this is basically a fact section*/
+.fact-section i
+{
+    color: #149DDD;
+    font-size: 40px;
+}
+.fact-section h2
+{
+    color: #149DDD;
+}
+
+/*skills part*/
+.skill-section{
+    background-color: rgba(173,177,184,0.131);
+}
+.skill-section h2{
+    color: #149DDD;
+}
+.skill-section span
+{
+    font-weight: bold;
+}
+.skill-section .progress
+{
+    border-radius: 0% !important;
+    height: 10px;
+}
+.skill-section .progress-bar
+{
+  
+    background-color: #149DDD;
+}
+/*end */
+
+
+/*resume part*/
+.resume-section h1
+{
+    color: darkolivegreen;
+}
+.resume-section h2{
+    color: #149DDD;
+}
+.resume-section .resume-box
+{
+    border-left: 2px  solid #149DDD;
+}
+.resume-section .resume-box::before
+{
+    content: '';
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    border : 2px solid #149DDD;
+    background-color: #fff;
+    top: 0%;
+    left: -10px;
+}
+
+.resume-section .resume-box h4
+{
+    font-weight: bold;
+    
+}
+
+.resume-section .resume-box p{
+    font-style: italic;
+    font-size: 18px;
+   
+}
+.resume-section .resume-box ul li
+{
+    font-size: 18px;
+    font-style: italic;
+    
+}
+
+/*port*/
+
+.Portfolio-section h2{
+    color: #149DDD;
+
+}
+.Portfolio-section
+{
+    background-color: rgba(173, 177, 184, 0.204);
+}
+.Portfolio-section ul .nav-box
+{
+    display: flex;
+    background-color: rgb(220, 220, 220);
+    border-radius: 25px;
+    padding: 10px;
+}
+.Portfolio-section ul .nav-box li {
+    font-weight: bold;
+    color: #122d52;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+.Portfolio-section ul .nav-box li:hover{
+    color: #149DDD;
+}
+.Portfolio-section ul .nav-box li.active
+{
+    color: #149DDD;
+}
+.Portfolio-section .portfolio-box
+{
+    position: relative;
+}
+.Portfolio-section .portfolio-box .portfolio-con-box
+{
+    width: 94.5%;
+    height: 0px;
+    background-color: rgba(20, 157, 221, 0.545);
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+}
+.Portfolio-section .portfolio-box .portfolio-con-box button
+{
+    width: 20%;
+    transition: 0.1s ease-in-out;
+   
+}
+.Portfolio-section .portfolio-box .portfolio-con-box button:hover
+{
+    background-color: #149DDD;
+}
+.Portfolio-section .portfolio-box .portfolio-con-box button i
+{
+   color: #fff;
+   font-size: 22px;
+}
+
+.Portfolio-section .portfolio-box:hover .portfolio-con-box
+{
+opacity: 1;
+height: 50px;
+}
+
+/*contact*/
+.Contact-section h2
+{
+    color: #149DDD;
+}
+.Contact-section .icon-box i
+{
+    padding: 1px;
+    font-size: 40px;
+    color:#149DDD;
+   
+}
+.Contact-section label
+{
+    font-size: 22px;
+    font-style: calc();
+}
+
+.about-section h2::after,.fact-section h2::after ,
+.skill-section h2::after,.resume-section h2::after,
+.Portfolio-section h2::after,.Contact-section h2::after
+{
+   content: '';
+   position: relative;
+   display: block;
+   width: 50px;
+   height: 3px;
+   background: #149DDD;
+   top: 5px;
+   bottom: 0;
+   left: 0;
+   
+}
+
+
+
+
+
+
+
+
+@media(max-width :1199px)
+{
+    .side-nav
+    {
+        overflow: 0;
+    }
+    .hero-bg button
+    {
+        opacity: 1;
+    }
+}
